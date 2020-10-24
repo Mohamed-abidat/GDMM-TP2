@@ -2,7 +2,7 @@
 	error_reporting(-1);
 	ini_set('display_errors', 'On');
 	
-	echo "<h1>Affichage</h1>";
+	echo "<h1>Display images properties</h1>";
 	
 	$exif = exif_read_data('images/test1.jpg', 0, true);
 	echo "<h1>test1.jpg:</h1>";
@@ -25,7 +25,7 @@
 			echo "$key.$name: $val<br />\n";
 		}
 	}
-	echo "<h1>affichage du type de l'image test1 : </h1>";
+	echo "<h1>Display image type : </h1>";
 	$image = "images/test1.jpg";
 	$types = array(
 	1 => "GIF",
