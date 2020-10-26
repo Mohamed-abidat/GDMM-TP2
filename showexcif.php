@@ -4,8 +4,8 @@
 	
 	echo "<h1>Affichage</h1>";
 	
-	$exif = exif_read_data('images/test1.jpg', 0, true);
-	echo "<h1>test1.jpg:</h1>";
+	$exif = exif_read_data('images/user1.jpg', 0, true);
+	echo "<h1>user1.jpg:</h1>";
 	echo $exif==false ? "No header data found.<br />\n" : "Image contains headers<br />\n";
 	
 	foreach ($exif as $key => $section) 
@@ -16,8 +16,8 @@
 		}
 	}
 	
-	$exif = exif_read_data('images/test2.jpg', 0, true);
-	echo "<h1>test2.jpg:</h1>";
+	$exif = exif_read_data('images/user2.jpg', 0, true);
+	echo "<h1>user2.jpg:</h1>";
 	foreach ($exif as $key => $section) 
 	{
 		foreach ($section as $name => $val) 
@@ -25,8 +25,8 @@
 			echo "$key.$name: $val<br />\n";
 		}
 	}
-	echo "<h1>affichage du type de l'image test1 : </h1>";
-	$image = "images/test1.jpg";
+	echo "<h1>affichage du type de l'image user1 : </h1>";
+	$image = "images/user1.jpg";
 	$types = array(
 	1 => "GIF",
 	2 => "JPEG",
